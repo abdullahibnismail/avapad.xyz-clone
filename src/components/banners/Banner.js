@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import {btnCss} from '../../constants/Constant'
+import Navbar from '../navbar/Navbar'
 
 class Banner extends Component {
   render() {
@@ -11,7 +12,7 @@ class Banner extends Component {
             THE FIRST DUAL TOKEN MECHANISM LAUNCHPAD ON CRYPTO-UNIVERSE
           </h1>
           <div className='flex flex-wrap max-w-full mx-56 mt-5  box-border justify-center text-center'>
-            <p className='box-border mt-0 mb-4  font-semibold text-xl'>AVAPAD is a community-driven launchpad built to provide equal opportunities for all investors.</p>
+            <p className='box-border mt-0 mb-4  font-semibold text-xl  text-[hsla(0,0%,100%,.7)] '>AVAPAD is a community-driven launchpad built to provide equal opportunities for all investors.</p>
           </div>
           <div className='mt-6 text-center'>
             <button className={btnCss}>APPLY FOR IDO</button>
