@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import DialogBox from "../dialogBox/Dialog";
-import { navbar } from "../../constants/Constant";
-import SmlNavbar from "./SmlNavbar";
+import ResponsiveNavbar from "./ResponsiveNavbar";
 
 class Navbar extends Component {
     constructor() {
@@ -10,7 +9,7 @@ class Navbar extends Component {
       this.state = {
         dialog: false,
         active: "",
-        smNav: "",
+        smNav: false,
       };
       this.onClickOpenDialog = this.onClickOpenDialog.bind(this);
       this.onClickCloseDialog = this.onClickCloseDialog.bind(this);
@@ -40,17 +39,17 @@ class Navbar extends Component {
     this.setState({ dialog: false });
   }
   onClickShowSmNav() {
-    this.setState({ smNav: navbar });
-    if (this.state.smNav == navbar) {
+    this.setState({ smNav: true });
+    if (this.state.smNav == true) {
       {
-         this.setState({ smNav: "" })
+         this.setState({ smNav: false })
       }
     }
   }
 
   render() {
     return (
-      <div className="navbar flex flex-col bg-app-clr z-50 sticky top-0 py-3 px-[20px] md:px-[40px] lg:px-[120px] w-full  ">
+      <div className="navbar flex flex-col bg-app-clr z-10 sticky top-0 py-3 px-[20px] md:px-[40px] lg:px-[120px] w-full  ">
         <div className="flex w-full justify-between items-center mx-auto ">
           <div className="">
             <Link
@@ -142,7 +141,7 @@ class Navbar extends Component {
           </div>
           {/*ENDED*/}
         </div>
-        {this.state.smNav}
+        {this.state.smNav === true ? <ResponsiveNavbar/> : null}
       </div>
     );
   }

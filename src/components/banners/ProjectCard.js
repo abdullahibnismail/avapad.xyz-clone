@@ -11,7 +11,7 @@ class ProjectCard extends Component {
           <div className="flex mb-3 items-center ">
             <div className='flex justify-center  mr-2.5 items-center h-20 w-20 p-3 rounded-full relative  before:absolute before:content-[""] before:bg-center before:bg-cover before:top-[50%] before:left-[50%] before:translate-x-[-50%] before:translate-y-[-50%] before:h-20 before:w-20'>
               <img
-                src="https://akitavax.com/xakita1.png"
+                src="/assets/logo192.png"
                 alt=""
                 className="bg-white flex  items-center justify-center rounded-full h-full w-full overflow-hidden  "
               />

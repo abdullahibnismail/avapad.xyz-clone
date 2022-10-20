@@ -39,10 +39,10 @@ class Tiers extends Component {
                     <button href="" onClick={this.onClickListner2nd} className={`${this.state.active=="XAKITA"?'active':null} text-[hsla(0,0%,100%,.5)] py-[10px] mr-[25px] border-0 rounded-none font-medium shadow-none block border-b-4 border-solid border-transparent `}>XAKITA Tiers </button>
                 </div>
             </div>
-            <div className='mb-4 flex flex-wrap box-border mx-10 md:mx-16 lg:mx-32 justify-between'>
+            <div className='mb-4 flex flex-wrap box-border mx-10 md:mx-16 lg:mx-32 justify-between '>
                 {this.state.cardData.map((e)=>{
                     return(
-                        <div className='max-w-full w-full md:w-[48%] lg:w-[32%]  '>
+                        <div className='cardBox max-w-full w-full md:w-[48%] lg:w-[32%]  '>
                             <div className='w-full p-8 bg-[#1f1f21] rounded-xl shadow-[0 10px 30px 0 rgb(5 16 44 / 15%)] text-center mx-auto mt-0 mb-6'>
                               <p className='text-[#db4d4e] text-2xl font-extrabold mb-4 bg-transparent'>{e.tiername}</p>
                               <hr className='h-px my-4  border-0 opacity-25 bg-white' />

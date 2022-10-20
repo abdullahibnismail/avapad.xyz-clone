@@ -26,11 +26,15 @@ export default function DialogBox(props) {
           leaveFrom="opacity-100"
           leaveTo="opacity-0"
         >
-          <div className="fixed inset-0 bg-[#000] bg-opacity-50 transition-opacity" />
+          <div 
+           className="fixed inset-0 bg-[#000] bg-opacity-50  transition-opacity" />
         </Transition.Child>
 
-        <div className="fixed inset-0 z-10 overflow-y-auto ">
-          <div className="flex min-h-full items-end justify-center  text-center sm:items-center sm:p-0 ">
+        <div className="fixed inset-0 z-10 overflow-y-auto">
+          <div 
+          onClick={props.func}
+          ref={cancelButtonRef}
+          className="flex min-h-full items-center justify-center  text-center sm:items-center  sm:p-0 ">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -40,15 +44,15 @@ export default function DialogBox(props) {
               leaveFrom="opacity-100 translate-y-0 sm:scale-100"
               leaveTo="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95"
             >
-              <Dialog.Panel className="relative transform overflow-hidden  rounded-lg bg-[#212529]   shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg">
-                <div className="bg-[#212529]  sm:p-6 sm:pb-4 w-full">
-                  <div className="sm:flex sm:items-start   ">
+              <Dialog.Panel className="relative transform  md:overflow-hidden  rounded-lg bg-[#212529]   shadow-xl transition-all sm:my-8 sm:w-full sm:max-w-lg ">
+                <div className="bg-[#212529]  p-6 pb-4  w-full">
+                  <div className="flex items-start   ">
                     <div className="md:ml-0 text-center sm:mt-0 ml-4  sm:text-left w-full   ">
                       <Dialog.Title className="flex justify-between">
                         <div className="text-2xl font-bold leading-6 text-white">
                           Select a Wallet
                         </div>
-                        <div className="sm:flex sm:flex-row-reverse sm:px-6">
+                        <div className="flex flex-row-reverse px-6">
                           <button
                             type="button"
                             className=" inline-flex w-full  py-1  shadow-sm  sm:mt-0 sm:ml-3 sm:w-auto sm:text-sm "
