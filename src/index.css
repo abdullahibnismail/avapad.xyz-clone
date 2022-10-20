@@ -1,73 +1,34 @@
-/* body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+body {
+  background-color: #1a1a1a; 
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+
 
 @tailwind base;
 @tailwind components;
-@tailwind utilities; */
+@tailwind utilities; 
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .navbar{
   box-shadow: 0 1px 10px 0 rgb(0 0 0 / 50%);
 }
-/* .aimated{
-  height: 500px;
-  width: 500px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-} */
-/* @keyframes clockwiseSpin {
-  from  {
-    transform: rotate(0deg);
- }
- to {
-    transform: rotate(360deg);
-  }	
+.cardBox{
+  box-shadow: 1px 2px 20px rgb(0 0 0 / 10%);
+}
+.cardBox:hover{
+  box-shadow: 3px 5px 30px 20px rgb(0 0 0 / 10%);
 }
 
-@keyframes antiClockwiseSpin {
-  from  {
-    transform: rotate(360deg);
- }
- to {
-    transform: rotate(0deg);
-  }	
-} */
-/* .aimated:before{
-  border: 4px solid;
-  border-color: #e63f40 #e63f40 hsla(0,0%,100%,.1) hsla(0,0%,100%,.1);
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  animation: clockwiseSpin 15s linear 0s infinite;
-} */
-/* .aimated:after{
-  border: 4px solid;
-  border-color: #e63f40 hsla(0,0%,100%,.1);
-  top: 40px;
-  left: 40px;
-  bottom: 40px;
-  right: 40px;
-  animation: antiClockwiseSpin 10s linear 0s infinite;
+.active{
+  color:#db4d4e;
+  border-bottom:4px solid #db4d4e;
 }
-.aimated:after{
-  position: absolute;
-  content: "";
-  border-radius: 50%;
-} */
+.activeNav{
+  color: #db4d4e;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
+}

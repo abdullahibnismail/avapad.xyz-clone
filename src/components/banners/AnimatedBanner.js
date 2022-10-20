@@ -5,9 +5,9 @@ import {aniBefore,aniAfter} from "../../constants/Constant"
 class AnimatedBanner extends Component {
   render() {
     return (
-      <div className="w-full">
-        <div className="flex items-center mx-32">
-          <div className=" w-[50%] text-[hsla(0,0%,100%,.7)] max-w-full  text-base font-semibold">
+      <div className="w-full ">
+        <div className="flex lg:items-center mx-10 md:mx-14 lg:mx-32 flex-col lg:flex-row">
+          <div className=" lg:w-[50%] text-[hsla(0,0%,100%,.7)] max-w-full  text-base font-semibold">
             <h6 className="">WHAT IS AVAPAD?</h6>
             <h2 className="text-white text-lg mb-2">
               Avapad is a community oriented decentralized launchpad that
@@ -33,8 +33,8 @@ class AnimatedBanner extends Component {
             </p>
             <p className="mb-4 font-normal">Avapad will only support projects that meet these criteria throughout their roadmaps. At the same time, Avapad charges low fees on all transactions through the Avalanche Network. In this way, it provides convenience to investors in terms of transaction mobility.</p>
           </div>
-          <div className=" w-[50%] relative box-border  ">
-            <div className={`aimated h-[500px] w-[500px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ${aniBefore} ${aniAfter}`}>
+          <div className="mt-[100px] md:mx-16 lg:mt-0  lg:w-[50%] relative box-border  ">
+            <div className={`aimated  h-[250px] w-[250px] md:h-[500px] md:w-[500px] absolute top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%] ${aniBefore} ${aniAfter}`}>
                {/* Animation DIV */}
             </div>
             <img src='/assets/logo192.png'  className="w-2/4 relative  mx-auto align-middle h-auto max-w-full text-center " />
